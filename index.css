@@ -1,9 +1,10 @@
 body{
-        background: #2c7da0;
+        background: #468faf;
         color: #a9d6e5;
 }
-
+.intro{
+        display: flex;
+}
 .intro h1{
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: center;
 }
