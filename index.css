@@ -1,11 +1,12 @@
 body{
         display: flex;
-        background: #a9d6e5;
-        color: #468faf;
+        width: 100%;
 }
 .intro{
         width: 100%;
         display: flex;
+        background: #a9d6e5;
+        color: #468faf;
 }
 .intro h1{
         width: 100%;
