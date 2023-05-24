@@ -3,15 +3,16 @@ body{
         width: 100%;
 }
 
-.intro{
+div {
         width: 100%;
         justify-content: center;
+}
+.intro{
         background-color: #a9d6e5;
         color: #468faf;
 }
 
 .intro h1{
-        width: 100%;
         
 }
 
