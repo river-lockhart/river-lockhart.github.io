@@ -3,8 +3,10 @@ body{
         color: #a9d6e5;
 }
 .intro{
+        width: 100%;
         display: flex;
 }
 .intro h1{
+        width: 100%;
         justify-content: center;
 }
