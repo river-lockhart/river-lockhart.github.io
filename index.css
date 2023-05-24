@@ -1,7 +1,7 @@
 body{
         display: flex;
-        background: #468faf;
-        color: #a9d6e5;
+        background: #a9d6e5;
+        color: #468faf;
 }
 .intro{
         width: 100%;
@@ -10,4 +10,9 @@ body{
 .intro h1{
         width: 100%;
         justify-content: center;
+}
+
+.bio{
+        background: #e2eafc;
+        color: #b6ccfe;
 }
