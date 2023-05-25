@@ -1,31 +1,37 @@
-html{
+html {
         height: 100%;
 }
-body{
+
+body {
         display: flex;
+        margin: 0;
         min-height: 100%;
         width: 100%;
 }
 
-.main {
+#main {
+        width: 100%;
         display: block;
 }
 
 div {
         display: flex;
+        justify-content: center;
+        height: 300px;
         width: 100%;
-        justify-content: center;
 }
-.intro{
-        background-color: #a9d6e5;
-        color: #468faf;
-}
-
-.intro h1{
-        justify-content: center;
+#intro {
+        background: #292929;
+        color: #ababab;
+        font-size: 50px;
+        font-family: 'Signika', sans-serif;
+        align-items: center;
 }
 
-.bio{
-        background-color: #e2eafc;
+#intro h1 {
+}
+
+#bio {
+        background: #e2eafc;
         color: #b6ccfe;
 }
