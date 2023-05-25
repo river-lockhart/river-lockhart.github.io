@@ -7,6 +7,10 @@ body{
         width: 100%;
 }
 
+.main {
+        display: block;
+}
+
 div {
         display: block;
         width: 100%;
