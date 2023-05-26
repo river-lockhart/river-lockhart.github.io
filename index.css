@@ -3,13 +3,36 @@ html {
 }
 
 body {
-        display: flex;
+        display: block;
         margin: 0;
         min-height: 100%;
         width: 100%;
 }
 
-#main {
+#intro-page {
+        height: 100vh;
+}
+
+ul{
+        margin: 0 auto;
+        list-style: none;
+}
+
+li {
+        float: left;
+        padding: 1px;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all 1.5s ease-in;
+        font-size: 100px;
+}
+
+li.show {
+        opacity: 1;
+        transform: translateY(0px);
+}
+
+#main, #intro-page {
         width: 100%;
         display: block;
 }
@@ -17,7 +40,7 @@ body {
 div {
         display: flex;
         justify-content: center;
-        height: 300px;
+        height: 100vh;
         width: 100%;
 }
 #intro {
