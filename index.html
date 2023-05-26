@@ -4,6 +4,7 @@
         <link href="index.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
         <script src="index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <title>River's Portfolio</title>
 </head>
 <body>
@@ -19,8 +20,24 @@
                                 <li class="show">e</li>
                                 <li class="show">!</li>
                         </ul>
+                        <script >
+                                const letters = document.querySelectorAll("li");
+                                const disappear = document.getElementById("intro-page"); 
+
+                                setTimeout(() => {
+                                        Array.from(letters).forEach((letter,index) => {
+                                setTimeout(() => {
+                                        letter.classList.toggle("show");
+                                }, index * 150);
+                        })
+                        }, 1000);
+                        setTimeout(function() {
+                                $(disappear).fadeOut('fast');
+                            }, 4000);
+                        </script>
                 </div>
         </div>
+
         <div id="main">
                 
                 <div id="bio">

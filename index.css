@@ -18,6 +18,11 @@ ul{
         list-style: none;
 }
 
+li.show {
+        opacity: 1;
+        transform: translateY(0px);
+}
+
 li {
         float: left;
         padding: 1px;
@@ -25,11 +30,6 @@ li {
         opacity: 0;
         transition: all 1.5s ease-in;
         font-size: 100px;
-}
-
-li.show {
-        opacity: 1;
-        transform: translateY(0px);
 }
 
 #main, #intro-page {
