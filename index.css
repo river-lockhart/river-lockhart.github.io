@@ -1,5 +1,6 @@
 html {
-        height: 100%;
+        height: 100vh;
+        width: 100%;
 }
 
 body {
@@ -13,22 +14,47 @@ body {
         height: 100vh;
 }
 
-ul{
+#intro ul{
         margin: 0 auto;
         list-style: none;
 }
 
-li.show {
+#intro li.show {
         opacity: 1;
         transform: translateY(0px);
 }
 
-li {
+li.show.w {
+        color: #d8f3dc;
+}
+li.show.e {
+        color: #b7e4c7;
+}
+li.show.l {
+        color: #95d5b2;
+}
+li.show.c {
+        color: #74c69d;
+}
+li.show.o {
+        color: #52b788;
+}
+li.show.m {
+        color: #40916c;
+}
+li.show.e2 {
+        color: #2d6a4f;
+}
+li.show.exclamation {
+        color: #1b4332;
+}
+
+#intro li {
         float: left;
         padding: 1px;
         transform: translateY(-50px);
         opacity: 0;
-        transition: all 1.5s ease-in;
+        transition: all 2.5s ease-in;
         font-size: 100px;
 }
 
@@ -37,13 +63,55 @@ li {
         display: block;
 }
 
+.nav {
+        background-color: #95d5b2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        font-size: 18px;
+        opacity: 0.9;
+        width: 100%;
+}
+
+.nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin-left: auto;
+        
+}
+
+.nav li {
+        background-color: #b7e4c7;
+        color:#2d6a4f;
+        text-decoration: underline;
+        margin-right: 8px;
+        padding: 5px;
+        border-radius: 15px;
+}
+
+.nav a{
+        background-color: #b7e4c7;
+        color:#2d6a4f;
+        padding: 5px;
+        border-radius: 15px;
+}
+
+.nav a:hover {
+        background-color: #40916c;
+        color: #28aa19;
+}
+
 div {
         display: flex;
         justify-content: center;
-        height: 100vh;
         width: 100%;
 }
+
 #intro {
+        height: 100vh;
         background: #292929;
         color: #ababab;
         font-size: 50px;
@@ -51,10 +119,54 @@ div {
         align-items: center;
 }
 
-#intro h1 {
+
+
+
+/*Bio,proj,connect div setups*/
+
+#bio, #proj, #connect {
+        display: block;
+        margin: 0;
+        height: 100vh;
+        background: #d8f3dc;
+        color: #74c69d;
 }
 
-#bio {
-        background: #e2eafc;
-        color: #b6ccfe;
+#bio-head, #proj-head, #connect-head {
+        justify-content: space-evenly;
+        padding-top: 30px;
 }
+
+/*Biography Section*/
+
+#bio-body {
+        display: flex;
+        padding: 30px 30px 30px 0px;
+        justify-content: center;
+        align-items: center;
+        word-wrap: normal;
+}
+
+#pictures {
+        align-items: center;
+        justify-content: space-between;
+        
+}
+
+#pictures img {
+        transform: rotate(180deg);
+        padding: 15px;
+        margin-left: 70px;
+        border-radius: 200px;
+}
+#bio p{
+        width: 50%;
+        padding: 15px;
+        padding-right: 100px;
+}
+
+
+
+/*Projects Section*/
+
+
