@@ -1,25 +1,24 @@
-html {
-        height: 100vh;
-        width: 100%;
-}
-
-body {
+html,body
+{
         display: block;
-        margin: 0;
-        min-height: 100%;
         width: 100%;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+        max-height: 100vh;
 }
 
-#intro-page {
+.intro-page {
         height: 100vh;
 }
 
-#intro ul{
-        margin: 0 auto;
+.intro ul{
+        margin: 0;
         list-style: none;
 }
 
-#intro li.show {
+.intro li.show {
         opacity: 1;
         transform: translateY(0px);
 }
@@ -49,18 +48,20 @@ li.show.exclamation {
         color: #1b4332;
 }
 
-#intro li {
+.intro li {
         float: left;
         padding: 1px;
-        transform: translateY(-50px);
+        transform: translateY(-100px);
         opacity: 0;
         transition: all 2.5s ease-in;
         font-size: 100px;
 }
 
-#main, #intro-page {
+.main, .intro-page {
         width: 100%;
+        height: 100%;
         display: block;
+        margin: 0;
 }
 
 .nav {
@@ -80,7 +81,6 @@ li.show.exclamation {
         align-items: center;
         list-style-type: none;
         margin-left: auto;
-        
 }
 
 .nav li {
@@ -104,69 +104,10 @@ li.show.exclamation {
         color: #28aa19;
 }
 
-div {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-}
-
-#intro {
+.intro {
         height: 100vh;
         background: #292929;
         color: #ababab;
         font-size: 50px;
         font-family: 'Signika', sans-serif;
-        align-items: center;
 }
-
-
-
-
-/*Bio,proj,connect div setups*/
-
-#bio, #proj, #connect {
-        display: block;
-        margin: 0;
-        height: 100vh;
-        background: #d8f3dc;
-        color: #74c69d;
-}
-
-#bio-head, #proj-head, #connect-head {
-        justify-content: space-evenly;
-        padding-top: 30px;
-}
-
-/*Biography Section*/
-
-#bio-body {
-        display: flex;
-        padding: 30px 30px 30px 0px;
-        justify-content: center;
-        align-items: center;
-        word-wrap: normal;
-}
-
-#pictures {
-        align-items: center;
-        justify-content: space-between;
-        
-}
-
-#pictures img {
-        transform: rotate(180deg);
-        padding: 15px;
-        margin-left: 70px;
-        border-radius: 200px;
-}
-#bio p{
-        width: 50%;
-        padding: 15px;
-        padding-right: 100px;
-}
-
-
-
-/*Projects Section*/
-
-

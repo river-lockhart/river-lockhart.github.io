@@ -1,66 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <link href="index.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="index.css">
         <script src="index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <title>River's Portfolio</title>
 </head>
 <body>
-        <div id="intro-page">
-                <div id="intro">
-                        <ul>
-                                <li class="show w">W</li>
-                                <li class="show e">E</li>
-                                <li class="show l">L</li>
-                                <li class="show c">C</li>
-                                <li class="show o">O</li>
-                                <li class="show m">M</li>
-                                <li class="show e2">E</li>
-                                <li class="show exclamation">!</li>
-                        </ul>
-                        <script >
-                                const letters = document.querySelectorAll("#intro li");
-                                const disappear = document.getElementById("intro-page"); 
-                                const appear = document.getElementById("main");
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+                <div class="container">
+                        <a href="#" class="navbar-brand">My Portfolio</a>
 
-                                setTimeout(() => {
-                                        Array.from(letters).forEach((letter,index) => {
-                                setTimeout(() => {
-                                        letter.classList.toggle("show");
-                                }, index * 150);
-                        })
-                        }, 1000);
-                        setTimeout(function() {
-                                $(disappear).fadeOut("slow");
-                            }, 4000);
-                        setTimeout(function() {
-                        $(appear).fadeIn("slow");
-                        }, 5000);
-                        </script>
-                </div>
-        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
 
-        <div id="main">
-                <header class="nav">
-                        <ul>
-                                <li><a href="index.html">About Me</a></li>
-                                <li><a href="projects.html">Projects</a></li>
-                                <li><a href="connect.html">Connect</a></li>
-                        </ul>
-                </header>
-                <div id="bio">
-                        <div id="bio-head">
-                                <h1>Biography</h1>
+                        <div class="collapse navbar-collapse" id="navmenu">
+                                <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item">
+                                                <a href="connect.html" class="nav-link">About Me</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a href="projects.html" class="nav-link">Projects</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a href="connect.html" class="nav-link">Connect</a>
+                                        </li>
+                                </ul>
                         </div>
-                        <div id="bio-body">
-                                <div id="pictures">
-                                        <img src="river2.jpg" alt="Picture of me" width="50%">
+                </div>
+        </nav>
+
+
+
+        <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+                <div class="container">
+                        <div class="d-sm-flex align-items-center justify-content-between">
+                                <div>
+                                        <h1><span class="text-warning">River Lockhart</span></h1>
+                                        <p class="lead my-4">We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role</p>
                                 </div>
-                                <p>My name is River Lockhart. I am a 27 year old student.aolwhrtgoha worghaowhrgo naoirswh goihaorghaoiw hrgoahn werogihn aowhnrgoa hwersofghn ailwsuehnrg fuajbhswre gioujhawo uierhngoia uwhnreg ioanwser ioufgnbil akwbernglia wbrwgijkufbnal ikrwbdnfgla ikwbnerfg ibawlreik gfbnalikwer bngjiaswzbne rgikbnaswrikejg blaikwrebj galwberglikabw erlgbaeiklrugb</p>
+                                <img class="img-fluid w-50 d-none d-sm-block" src="river2.jpg" alt="Me smiling with trees reflecting off the mirror behind me" style="transform: scaleY(-1); ">
                         </div>
                 </div>
-        </div>
+        </section>
+
+        <!--Skills/Achievements-->
+        <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5">
+                <div class="container">
+
+                </div>
+        </section>
+
+        <!--Projects-->
+        <!--Boxes-->
+        <section class="p-5">
+                <div class="container">
+                        <div class="row text-center mb-3">
+                                <div class="col-md">
+                                        <div class="card bg-dark text-light">
+                                                <div class="h1 mb-3">
+                                                        <i class="bi bi-laptop"></i>
+                                                </div>
+                                                <h3 class="card-title mb-3">
+                                                        Project 1
+                                                </h3>
+                                                <p class="card-text">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero facere non laboriosam. Incidunt, culpa!
+                                                </p>
+                                                <a href="#" class="btn btn-primary m-2">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md">
+                                        <div class="card bg-secondary text-light">
+                                                <div class="h1 mb-3">
+                                                        <i class="bi bi-person-square"></i>
+                                                </div>
+                                                <h3 class="card-title mb-3">
+                                                        Project 2
+                                                </h3>
+                                                <p class="card-text">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero facere non laboriosam. Incidunt, culpa!
+                                                </p>
+                                                <a href="#" class="btn btn-dark m-2">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md">
+                                        <div class="card bg-dark text-light">
+                                                <div class="h1 mb-3">
+                                                        <i class="bi bi-people"></i>
+                                                </div>
+                                                <h3 class="card-title mb-3">
+                                                        Project 3
+                                                </h3>
+                                                <p class="card-text">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero facere non laboriosam. Incidunt, culpa!
+                                                </p>
+                                                <a href="#" class="btn btn-primary m-2">Read More</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="row text-center">
+                                <div class="col-md">
+                                        <div class="card bg-secondary text-light">
+                                                <div class="h1 mb-3">
+                                                        <i class="bi bi-laptop"></i>
+                                                </div>
+                                                <h3 class="card-title mb-3">
+                                                        Project 4
+                                                </h3>
+                                                <p class="card-text">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero facere non laboriosam. Incidunt, culpa!
+                                                </p>
+                                                <a href="#" class="btn btn-dark m-2">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md">
+                                        <div class="card bg-dark text-light">
+                                                <div class="h1 mb-3">
+                                                        <i class="bi bi-person-square"></i>
+                                                </div>
+                                                <h3 class="card-title mb-3">
+                                                        Project 5
+                                                </h3>
+                                                <p class="card-text">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero facere non laboriosam. Incidunt, culpa!
+                                                </p>
+                                                <a href="#" class="btn btn-primary m-2">Read More</a>
+                                        </div>
+                                </div>
+                                <div class="col-md">
+                                        <div class="card bg-secondary text-light">
+                                                <div class="h1 mb-3">
+                                                        <i class="bi bi-people"></i>
+                                                </div>
+                                                <h3 class="card-title mb-3">
+                                                        Project 6
+                                                </h3>
+                                                <p class="card-text">
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus libero facere non laboriosam. Incidunt, culpa!
+                                                </p>
+                                                <a href="#" class="btn btn-dark m-2">Read More</a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
