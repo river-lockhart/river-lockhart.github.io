@@ -1,0 +1,19 @@
+{
+  "name": "river-lockhart.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.2",
+    "parcel": "^2.9.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
