@@ -2,7 +2,7 @@
   "name": "river-lockhart.github.io",
   "version": "1.0.0",
   "description": "",
-  "source": "index.html",
+  "source": "./src/index.html",
   "scripts": {
     "dev": "parcel"
   },
