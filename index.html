@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="/index.59a40e7a.js" defer=""></script>
         <link rel="stylesheet" href="/index.2e8c441c.css">
         <link rel="stylesheet" href="/index.3092e1e0.css">
         <title>River's Portfolio</title>
 </head>
 
-<body class="bg-light">
+<body class="bg-light h-100">
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg bg-dark navbar-light py-3">
                 <div class="container">
@@ -23,13 +25,13 @@
                         <div class="collapse navbar-collapse" id="navmenu">
                                 <ul class="navbar-nav ms-auto">
                                         <li class="nav-item shake">
-                                                <a href="#" class="nav-link">About Me</a>
+                                                <a href="#" class="nav-link intro-content">About Me</a>
                                         </li>
                                         <li class="nav-item shake">
-                                                <a href="#" class="nav-link">Projects</a>
+                                                <a href="#" class="nav-link intro-content">Projects</a>
                                         </li>
                                         <li class="nav-item shake">
-                                                <a href="#" class="nav-link">Connect</a>
+                                                <a href="#" class="nav-link intro-content">Connect</a>
                                         </li>
                                 </ul>
                         </div>
@@ -37,38 +39,43 @@
         </nav>
 
 
-        <!--About Me-->
-        <section class="bg-dark text-light p-5 p-lg-5 pt-lg-5 text-center text-sm-start vh-100">
+        <!--Intro-->
+        <section class="bg-dark text-light p-5 p-lg-5 pt-lg-5 text-center text-sm-start vh-55 textlayer">
                 <div class="container">
-                        <div class="row d-sm-flex align-items-center justify-content-around">
-                                <div class="row mb-5">
-                                        <h1><span class="text-light fw-bolder">River Lockhart</span></h1>
-                                        <h4 class="text-info">We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role</h4>
-                                </div>
-                                <div>
-                                        <div class="row align-items-end justify-content-end">
-                                                <div class="col-md">
-                                                        <h4 class="text-info">-----------------------------------------</h4>
-                                                        <h4 class="text-info">Email: river.lockhart@gmail.com</h4>
-                                                </div>
-                                                <div class="col-md">
-                                                        <img class="img-fluid w-100 d-none d-sm-block" src="/river2.9ecb97ed.jpg" alt="Me smiling with trees reflecting off the mirror behind me" style="transform: scaleY(-1)">
+                        <div class="row d-sm-flex align-items-center justify-content-start ">
+                                <div class="container-fluid">
+                                        <div class="row mb-5 intro-content">
+                                                <h1 class="intro-content justify-content-start"><span class="text-light fw-bolder">River Lockhart</span></h1>
+                                                <h4 class="text-info intro-content">We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role</h4>
+                                        </div>
+                                        <div>
+                                                <div class="row align-items-end justify-content-end">
+                                                        <div class="col-md  intro-content">
+                                                                <h4 class="text-info">Student/Web Developer</h4>
+                                                                <div class="intro-content d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pt-3 mb-1 border-bottom border-info "></div>
+                                                        </div>
+                                                        <div class="col-md intro-content">
+                                                                <img class="img-fluid w-100 d-none d-sm-block" src="/river2.9ecb97ed.jpg" alt="Me smiling with trees reflecting off the mirror behind me" style="transform: scaleY(-1)">
+                                                        </div>
                                                 </div>
                                         </div>
-                                </div>
-                                
+                                </div>  
                         </div>
                 </div>
         </section>
+        
 
         <!--Skills/Achievements-->
         <svg width="auto" height="80" viewbox="0 0 500 80" preserveaspectratio="none">
                 <path d="M0,0 L0,40 Q250,80 500,40 L500,0 Z" fill="#b6eede"></path>
         </svg>
+        <div class="container bg-secondary">
+                <div></div>
+        </div>
         
 
         <!--Projects-->
-        <section class="p-5 bgchange bg-secondary vh-100">
+        <section class="p-5 bg-secondary vh-55">
                 
                 <div class="container">
                         <div class="mb-3 p-4 text-light text-center">
@@ -196,8 +203,7 @@
 
         
         <!--Javascript-->
-        <script src="/index.59a40e7a.js" defer=""></script>
-
+        
 </body>
 
 </html>

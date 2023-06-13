@@ -1,0 +1,38 @@
+.shake:hover {
+  animation: .3s linear forwards shake;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(.5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.pulse:hover {
+  animation: 1s forwards pulse;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.intro-content {
+  filter: alpha(opacity= 100);
+  display: none;
+}
+
+/*# sourceMappingURL=index.3092e1e0.css.map */
