@@ -31,8 +31,38 @@
 }
 
 .intro-content {
-  filter: alpha(opacity= 100);
-  display: none;
+  animation: 3s forwards fadeInAnimation;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-content {
+  animation: 3s forwards spinIn;
+}
+
+@keyframes spinIn {
+  0% {
+    opacity: 0;
+    transform: rotate("-180");
+  }
+
+  50% {
+    opacity: .5;
+    transform: rotate("-90");
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate("0");
+  }
 }
 
 /*# sourceMappingURL=index.3092e1e0.css.map */

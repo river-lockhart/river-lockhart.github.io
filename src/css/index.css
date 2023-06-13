@@ -20,6 +20,37 @@
 }
 
 .intro-content{
-        filter : alpha(opacity=100);
-        display: none;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        }
+
+@keyframes fadeInAnimation {
+        0% {
+                opacity: 0;
+        }
+        100% {
+                opacity: 1;
+        }
+}
+
+.project-content{
+        animation: spinIn ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        }
+
+@keyframes spinIn {
+        0% {
+                opacity: 0;
+                transform: rotate('-180');
+        }
+        50% {
+                opacity: 0.5;
+                transform: rotate('-90');
+        }
+        100% {
+                opacity: 1;
+                transform: rotate('0');
+        }
 }

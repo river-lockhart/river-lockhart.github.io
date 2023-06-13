@@ -575,12 +575,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"8lRBv":[function(require,module,exports) {
 var _bootstrap = require("bootstrap");
-$(".textlayer").fadeIn("slow", function() {
-    $(".intro-content").animate({
-        "opacity": "show",
-        "paddingTop": 0
-    }, 3000);
-});
 
 },{"bootstrap":"h36JB"}],"h36JB":[function(require,module,exports) {
 /*!
