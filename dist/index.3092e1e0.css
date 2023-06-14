@@ -1,0 +1,86 @@
+.shake:hover {
+  animation: .3s linear forwards shake;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(.5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.pulse:hover {
+  animation: 1s forwards pulse;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.intro-content {
+  animation: 3s forwards fadeInAnimation;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.project-content {
+  animation: 3s forwards spinIn;
+}
+
+@keyframes spinIn {
+  0% {
+    opacity: 0;
+    transform: rotate("-180");
+  }
+
+  50% {
+    opacity: .5;
+    transform: rotate("-90");
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate("0");
+  }
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url("PlayfairDisplay-Regular.7e53c659.eot");
+  src: url("PlayfairDisplay-Regular.7e53c659.eot#iefix") format("embedded-opentype"), url("PlayfairDisplay-Regular.f0356a29.woff2") format("woff2"), url("PlayfairDisplay-Regular.c2221d60.woff") format("woff"), url("PlayfairDisplay-Regular.5029c71b.ttf") format("truetype"), url("PlayfairDisplay-Regular.52b2fd02.svg#PlayfairDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("SourceSans3-Roman.c10f71f2.eot");
+  src: url("SourceSans3-Roman.c10f71f2.eot#iefix") format("embedded-opentype"), url("SourceSans3-Roman.0f40b239.woff2") format("woff2"), url("SourceSans3-Roman.88b54ae1.woff") format("woff"), url("SourceSans3-Roman.e1a7df04.ttf") format("truetype"), url("SourceSans3-Roman.81ac9903.svg#SourceSans3-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*# sourceMappingURL=index.3092e1e0.css.map */

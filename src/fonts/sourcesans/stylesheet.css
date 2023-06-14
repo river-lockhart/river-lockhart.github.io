@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('SourceSans3-Roman.eot');
+    src: url('SourceSans3-Roman.eot?#iefix') format('embedded-opentype'),
+        url('SourceSans3-Roman.woff2') format('woff2'),
+        url('SourceSans3-Roman.woff') format('woff'),
+        url('SourceSans3-Roman.ttf') format('truetype'),
+        url('SourceSans3-Roman.svg#SourceSans3-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
