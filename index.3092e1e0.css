@@ -83,4 +83,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url("fa-solid-900.18f7533b.woff2") format("woff2"), url("fa-solid-900.4e493195.woff") format("woff"), url("fa-solid-900.563cfe1b.ttf") format("truetype"), url("fa-solid-900.bc17b50a.svg#fontawesome-free") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*# sourceMappingURL=index.3092e1e0.css.map */
